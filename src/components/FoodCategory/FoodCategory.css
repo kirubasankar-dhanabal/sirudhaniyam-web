@@ -1,0 +1,26 @@
+.typesContainer{
+    position: relative;
+    width: 260px;
+    height: 350px;
+    background: white;
+    border-radius: 7px;
+    margin-top: 50px;
+}
+
+.categoryImg{
+    width: 260px;
+    height: 300px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.foodcategoryCard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    column-gap: 50px;
+    margin: auto;
+    font-family: sans-serif;
+      font-style: normal;
+      font-weight: 600;
+}
