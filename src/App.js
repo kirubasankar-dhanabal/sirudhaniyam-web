@@ -1,15 +1,17 @@
 import React from "react";
-import Header from "./components/Header/Header";
+import './App.css';
+import Header from "./components/Header/Header.js";
 import Dashboard from "./components/Dashboard/Dashboard";
-import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
       <Header/>
-      {/* <Navbar/> */}
       <Dashboard/>
-      {/* <div style={{position:'relative', height:50}}></div> */}
+      <footer style={{position:'relative', height:50}}>
+        <Footer/>
+      </footer>
     </div>
   );
 }

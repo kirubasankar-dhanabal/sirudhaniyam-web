@@ -7,16 +7,14 @@ import {
   Route
 } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
-import DetailScreenComponent from './components/DetailScreen/DetailScreenComponent';
-import FoodCategory from './components/FoodCategory/FoodCategory';
+import ContentDetailComponent from './components/Content-Detail/ContentDetailComponent.js';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Route exact path="/"><App /></Route>
       <Route path="/dashboard"><App /></Route>
-      <Route path="/foodCategory"><FoodCategory /></Route>
-      <Route path="/detailscreen"><DetailScreenComponent /></Route>
+      {/* <Route path="/content-detail"><ContentDetailComponent /></Route> */}
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

@@ -1,0 +1,17 @@
+.pTag{
+    top: 40px;
+    position: relative;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: justify;
+    border-radius: 9px;
+    background: white;
+    width: 800px;
+    margin: 0 auto;
+    /* margin-top: 40px; */
+    box-shadow: 5px 10px 29px 0 rgb(68 88 144 / 20%);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 40px;
+}

@@ -1,19 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./SmallCardComponent.css";
-import { useHistory } from 'react-router-dom';
-import axios from 'axios';
+import "./MiniCardComponent.css";
 
-let colors = ["#3c78e5", "#cdd63e", "#b0b06c", "#22ae8e", "#7d6dcb"]
+import axios from 'axios';
 
 const SmallCardComponent = (props) => {
 
     const [blogData, setBlogData] = useState([]);
-    const history = useHistory();
-
-    // const check = () => {
-    //     console.log('clicked')
-    // }
-
+    
     const blogContent = () => {
         axios.post(`https://sirudhaniyam.ardhaapps.com/api/sirudhaniyam/blog`).then((re) => {
             if (re) {
@@ -25,13 +18,10 @@ const SmallCardComponent = (props) => {
     }
 
     const detailHandler = (e) => {
-        return history.push({
-            pathname : '/detailscreen',
-            state: { key : Number(e.target.getAttribute('value')), blogKey : 'BlogScreen' }
-        })
+        props.setPage(8,Number(e.target.getAttribute('value')),'blogScreen',4);
     }
 
-    useEffect(blogContent,[]);
+    useEffect(blogContent, []);
 
     return (
         <div className='smallCard' style={{ display: 'flex', position: 'relative' }}>
